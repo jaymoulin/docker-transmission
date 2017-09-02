@@ -13,4 +13,4 @@ VOLUME /to_download
 ENV USERNAME=admin
 ENV PASSWORD=admin
 
-CMD ["transmission-daemon", "-c", "/to_download", "-w", "/output", "-f", "-t", "-u", "${USERNAME}", "-v", "${PASSWORD}"]
+CMD transmission-daemon -c /to_download -w /output -f -t -a *.*.*.* -u "$USERNAME" -v "$PASSWORD"
