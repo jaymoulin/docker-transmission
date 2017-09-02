@@ -1,10 +1,14 @@
 FROM dpvduncan/rpi-alpine
 
-RUN apk update && apk add transmission-daemon
+RUN apk update --no-cache && apk add transmission-daemon
 
 EXPOSE 9091
 EXPOSE 51413
 
-VOLUME /data
+VOLUME /output
+VOLUME /to_download
 
-CMD ["transmission-daemon"]
+ENV USERNAME=admin
+ENV PASSWORD=admin
+
+CMD ["/usr/bin/transmission-daemon", "-c", "/to_download", "-w", "/output", "-f", "-t", "-u", "${USERNAME}", "-v", "${PASSWORD}"]
