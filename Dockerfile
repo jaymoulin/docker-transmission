@@ -1,5 +1,7 @@
 FROM dpvduncan/rpi-alpine
 
+MAINTAINER Jay MOULIN <jaymoulin@gmail.com>
+
 RUN apk update --no-cache && apk add transmission-daemon
 WORKDIR /usr/bin
 
