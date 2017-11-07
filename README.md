@@ -5,6 +5,7 @@ Raspberry PI - Transmission Bittorrent Client - Docker Image
 
 [![latest release](https://img.shields.io/github/release/jaymoulin/docker-rpi-transmission.svg "latest release")](http://github.com/jaymoulin/docker-rpi-transmission/releases)
 [![Docker Pulls](https://img.shields.io/docker/pulls/jaymoulin/rpi-transmission.svg)](https://hub.docker.com/r/jaymoulin/rpi-transmission/)
+[![Docker stars](https://img.shields.io/docker/stars/jaymoulin/rpi-transmission.svg)](https://hub.docker.com/r/jaymoulin/rpi-transmission/)
 [![Bitcoin donation](https://github.com/jaymoulin/jaymoulin.github.io/raw/master/btc.png "Bitcoin donation")](https://m.freewallet.org/id/374ad82e/btc)
 [![Litecoin donation](https://github.com/jaymoulin/jaymoulin.github.io/raw/master/ltc.png "Litecoin donation")](https://m.freewallet.org/id/374ad82e/ltc)
 
