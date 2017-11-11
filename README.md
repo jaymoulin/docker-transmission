@@ -16,7 +16,7 @@ Installation
 
 This will start Transmission
 ```
-docker run -d --restart=always --name transmission -v /path/to/incoming/torrents:/to_download -v /path/to/downloaded/files:/output -p 9091:9091 -p 51413:51413 -p 51413:51413/udp -e USERNAME=admin -p PASSWORD=admin jaymoulin/rpi-transmission
+docker run -d --restart=always --name transmission -v /path/to/incoming/torrents:/to_download -v /path/to/downloaded/files:/output -p 9091:9091 -p 51413:51413 -p 51413:51413/udp -e USERNAME=admin -e PASSWORD=admin jaymoulin/rpi-transmission
 ```
 
 ### Volumes
