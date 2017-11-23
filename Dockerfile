@@ -1,6 +1,10 @@
-FROM dpvduncan/rpi-alpine
+FROM alpine as builder
 
-MAINTAINER Jay MOULIN <jaymoulin@gmail.com>
+COPY qemu-*-static /usr/bin/
+
+FROM builder
+
+LABEL maintainer="Jay MOULIN <jaymoulin@gmail.com> <https://twitter.com/MoulinJay>"
 
 RUN apk update --no-cache && apk add transmission-daemon
 WORKDIR /usr/bin

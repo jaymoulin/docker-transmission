@@ -1,15 +1,14 @@
 ![logo](logo.png)
 
-Raspberry PI - Transmission Bittorrent Client - Docker Image
+Transmission Bittorrent Client - Docker Image (Multiarch)
 ===
 
-[![latest release](https://img.shields.io/github/release/jaymoulin/docker-rpi-transmission.svg "latest release")](http://github.com/jaymoulin/docker-rpi-transmission/releases)
-[![Docker Pulls](https://img.shields.io/docker/pulls/jaymoulin/rpi-transmission.svg)](https://hub.docker.com/r/jaymoulin/rpi-transmission/)
-[![Docker stars](https://img.shields.io/docker/stars/jaymoulin/rpi-transmission.svg)](https://hub.docker.com/r/jaymoulin/rpi-transmission/)
+[![latest release](https://img.shields.io/github/release/jaymoulin/docker-transmission.svg "latest release")](http://github.com/jaymoulin/docker-transmission/releases)
+[![Docker Pulls](https://img.shields.io/docker/pulls/jaymoulin/transmission.svg)](https://hub.docker.com/r/jaymoulin/transmission/)
+[![Docker stars](https://img.shields.io/docker/stars/jaymoulin/transmission.svg)](https://hub.docker.com/r/jaymoulin/transmission/)
 [![Bitcoin donation](https://github.com/jaymoulin/jaymoulin.github.io/raw/master/btc.png "Bitcoin donation")](https://m.freewallet.org/id/374ad82e/btc)
 [![Litecoin donation](https://github.com/jaymoulin/jaymoulin.github.io/raw/master/ltc.png "Litecoin donation")](https://m.freewallet.org/id/374ad82e/ltc)
 [![PayPal donation](https://github.com/jaymoulin/jaymoulin.github.io/raw/master/ppl.png "PayPal donation")](https://www.paypal.me/jaymoulin)
-[![Beerpay donation](https://beerpay.io/jaymoulin/docker-rpi-transmission/badge.svg "Beerpay donation")](https://beerpay.io/jaymoulin/docker-rpi-transmission)
 
 This image allows you to run an headless Bittorrent client on your Raspberry PI easily thanks to Docker.
 
@@ -18,7 +17,7 @@ Installation
 
 This will start Transmission
 ```
-docker run -d --restart=always --name transmission -v /path/to/incoming/torrents:/to_download -v /path/to/downloaded/files:/output -p 9091:9091 -p 51413:51413 -p 51413:51413/udp -e USERNAME=admin -e PASSWORD=admin jaymoulin/rpi-transmission
+docker run -d --restart=always --name transmission -v /path/to/incoming/torrents:/to_download -v /path/to/downloaded/files:/output -p 9091:9091 -p 51413:51413 -p 51413:51413/udp -e USERNAME=admin -e PASSWORD=admin jaymoulin/transmission
 ```
 
 ### Volumes
@@ -48,7 +47,7 @@ docker exec transmission apk upgrade --update --no-cache transmission-daemon && 
 Appendixes
 ---
 
-### Install RaspberryPi Docker
+### Install Docker
 
 If you don't have Docker installed yet, you can do it easily in one line using this command
  
