@@ -15,7 +15,7 @@ manifests:
   -
     image: jaymoulin/transmission:$VERSION-amd64
     platform:
-      architecture: arm64
+      architecture: amd64
       os: linux
   -
     image: jaymoulin/transmission:$VERSION-i386
