@@ -1,6 +1,7 @@
 FROM alpine as builder
 
 COPY qemu-aarch64-static /usr/bin/
+COPY qemu-arm-static /usr/bin/
 COPY qemu-s390x-static /usr/bin/
 COPY qemu-ppc64le-static /usr/bin/
 
