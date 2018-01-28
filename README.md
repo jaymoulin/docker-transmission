@@ -10,7 +10,7 @@ Transmission Bittorrent Client - Docker Image (Multiarch)
 [![Litecoin donation](https://github.com/jaymoulin/jaymoulin.github.io/raw/master/ltc.png "Litecoin donation")](https://m.freewallet.org/id/374ad82e/ltc)
 [![PayPal donation](https://github.com/jaymoulin/jaymoulin.github.io/raw/master/ppl.png "PayPal donation")](https://www.paypal.me/jaymoulin)
 
-This image allows you to run an headless Bittorrent client on your Machin easily thanks to Docker.
+This image allows you to run an headless Bittorrent client on your machine easily thanks to Docker.
 
 Installation
 ---
