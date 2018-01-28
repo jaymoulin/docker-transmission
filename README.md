@@ -10,7 +10,7 @@ Transmission Bittorrent Client - Docker Image (Multiarch)
 [![Litecoin donation](https://github.com/jaymoulin/jaymoulin.github.io/raw/master/ltc.png "Litecoin donation")](https://m.freewallet.org/id/374ad82e/ltc)
 [![PayPal donation](https://github.com/jaymoulin/jaymoulin.github.io/raw/master/ppl.png "PayPal donation")](https://www.paypal.me/jaymoulin)
 
-This image allows you to run an headless Bittorrent client on your Raspberry PI easily thanks to Docker.
+This image allows you to run an headless Bittorrent client on your Machin easily thanks to Docker.
 
 Installation
 ---
@@ -27,7 +27,7 @@ docker run -d --restart=always --name transmission -v /path/to/incoming/torrents
 
 ### Ports
 
-* 9091 is the port for web interface. You can go to http://__raspberry_ip__:9091 to display interface
+* 9091 is the port for web interface. You can go to http://__machine_ip__:9091 to display interface
 * 51413 and 51413/udp are the port for torrents
 
 ### Variables
