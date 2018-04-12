@@ -9,7 +9,9 @@ FROM builder
 
 LABEL maintainer="Jay MOULIN <jaymoulin@gmail.com> <https://twitter.com/MoulinJay>"
 
-RUN apk update --no-cache && apk add transmission-daemon
+RUN echo "http://dl-4.alpinelinux.org/alpine/edge/main/" >> /etc/apk/repositories && \ 
+apk update --no-cache && \
+apk add transmission-daemon
 WORKDIR /usr/bin
 
 EXPOSE 9091
